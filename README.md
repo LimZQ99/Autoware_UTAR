@@ -4,6 +4,26 @@ This repository provides a pre-built Docker image for the Autoware UTAR setup, e
 
 ---
 
+
+**🛠️ Prerequisites**
+
+Ensure Docker is installed and running on your machine.
+If required, log in to GitHub Container Registry using:
+```
+docker login ghcr.io
+```
+A GitHub personal access token may be required with read:packages scope.
+
+
+Make sure you download the map refer the link:
+```
+https://github.com/TUMFTM/Carla-Autoware-Bridge.git
+```
+---
+
+
+
+
 ## 📥 How to Pull the Image
 
 You can pull the Docker image directly from the GitHub Container Registry using the command below:
@@ -29,15 +49,12 @@ docker run -it --network=host -v /your/local/path:/workspace ghcr.io/limzq99/aut
 ---
 
 
-**🛠️ Prerequisites**
+**🚘 Run Autoware (inside container) **
 
-Ensure Docker is installed and running on your machine.
-If required, log in to GitHub Container Registry using:
+After enter the container, you can run autoware with:
 ```
-docker login ghcr.io
+ros2 launch autoware_launch e2e_simulator.launch.xml vehicle_model:=carla_t2_vehicle sensor_model:=carla_t2_sensor_kit map_path:=<path to /wsp/map>
 ```
-A GitHub personal access token may be required with read:packages scope.
-
 ---
 
 
