@@ -36,6 +36,7 @@ If required, log in to GitHub Container Registry using:
 docker login ghcr.io
 ```
 A GitHub personal access token may be required with read:packages scope.
+
 ---
 
 
@@ -58,6 +59,7 @@ A complete Autoware setup for UTAR research and development.
 Preconfigured environment to support simulation, testing, and autonomous driving research.
 
 Simplified setup, eliminating environment configuration errors.
+
 ---
 
 
