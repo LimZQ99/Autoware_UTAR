@@ -23,7 +23,8 @@ docker run -it ghcr.io/limzq99/autoware_utar:v1
 ```
 **If you need to run the container with volume mounting or specific port mappings, for example:**
 ```
-docker run -it -v /your/local/path:/workspace -p 8080:8080 ghcr.io/limzq99/autoware_utar:v1
+docker run -it --network=host -v /your/local/path:/workspace ghcr.io/limzq99/autoware_utar:v1
+
 ```
 ---
 
