@@ -13,7 +13,7 @@ docker pull ghcr.io/limzq99/autoware_utar:v1
 
 ```
 
-###**🚀 How to Run the Container**
+**🚀 How to Run the Container**
 
 After pulling the image, you can run it with:
 ```
@@ -23,7 +23,8 @@ docker run -it ghcr.io/limzq99/autoware_utar:v1
 ```
 docker run -it -v /your/local/path:/workspace -p 8080:8080 ghcr.io/limzq99/autoware_utar:v1
 ```
-###**🛠️ Prerequisites**
+**🛠️ Prerequisites**
+
 Ensure Docker is installed and running on your machine.
 If required, log in to GitHub Container Registry using:
 ```
@@ -31,12 +32,13 @@ docker login ghcr.io
 ```
 A GitHub personal access token may be required with read:packages scope.
 
-###**🗺️ Project workspce in Container**
+**🗺️ Project workspce in Container**
+
 Path to the workspoace:
 ```
 cd /home/limziquan/Desktop/FYP
 ```
-###**📚 About This Image**
+**📚 About This Image**
 
 This Docker image includes:
 
@@ -44,7 +46,7 @@ A complete Autoware setup for UTAR research and development.
 Preconfigured environment to support simulation, testing, and autonomous driving research.
 Simplified setup, eliminating environment configuration errors.
 
-###**💡 Useful Tips**
+**💡 Useful Tips**
 
 Keep your Docker engine updated for the best performance and compatibility.
 If running on WSL2 or Docker Desktop, ensure resources (CPU/RAM) are sufficient for simulation tasks.
