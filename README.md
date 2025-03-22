@@ -38,7 +38,7 @@ docker pull ghcr.io/limzq99/autoware_utar:latest
 
 After pulling the image, you can run it with:
 ```
-docker run -it ghcr.io/limzq99/autoware_utar:latest
+docker run -it --network=host ghcr.io/limzq99/autoware_utar:latest
 ```
 **If you need to run the container with volume mounting or specific port mappings, for example:**
 ```
