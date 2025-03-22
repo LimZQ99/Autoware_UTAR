@@ -29,7 +29,7 @@ https://github.com/TUMFTM/Carla-Autoware-Bridge.git
 You can pull the Docker image directly from the GitHub Container Registry using the command below:
 
 ```bash
-docker pull ghcr.io/limzq99/autoware_utar:v1
+docker pull ghcr.io/limzq99/autoware_utar:latest
 
 ```
 ---
@@ -39,11 +39,11 @@ docker pull ghcr.io/limzq99/autoware_utar:v1
 
 After pulling the image, you can run it with:
 ```
-docker run -it ghcr.io/limzq99/autoware_utar:v1
+docker run -it ghcr.io/limzq99/autoware_utar:latest
 ```
 **If you need to run the container with volume mounting or specific port mappings, for example:**
 ```
-docker run -it --network=host -v /your/local/path:/workspace ghcr.io/limzq99/autoware_utar:v1
+docker run -it --network=host -v /your/local/path:/workspace ghcr.io/limzq99/autoware_utar:latest
 
 ```
 ---
@@ -55,6 +55,9 @@ After enter the container, you can run autoware with:
 ```
 ros2 launch autoware_launch e2e_simulator.launch.xml vehicle_model:=carla_t2_vehicle sensor_model:=carla_t2_sensor_kit map_path:=<path to /wsp/map>
 ```
+
+The map can be show in the workspace, select the Town10 map for the demo.
+
 ---
 
 
