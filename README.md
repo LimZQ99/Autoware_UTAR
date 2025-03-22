@@ -23,17 +23,6 @@ https://github.com/TUMFTM/Carla-Autoware-Bridge.git
 
 
 
-
-**🗺️ Project workspce in Container**
-
-Path to the workspoace:
-```
-cd /home/limziquan/Desktop/FYP_in_container
-```
----
-
-
-
 ## 📥 How to Pull the Image
 
 You can pull the Docker image directly from the GitHub Container Registry using the command below:
@@ -57,6 +46,35 @@ docker run -it --network=host -v /your/local/path:/workspace ghcr.io/limzq99/aut
 
 ```
 ---
+
+
+
+
+**🗺️ Things to do after runing the container**
+
+Path to the workspoace:
+```
+cd /home/limziquan/Desktop/FYP_in_container
+```
+
+After you enter the workspace, copy all the content in the FYP_in_Contaoner into FYP folder using the following command:
+```
+cp -r /home/limziquan/Desktop/FYP_in_container/* /home/limziquan/Desktop/FYP
+```
+
+After copy,enter the autoware folder then build and source it:
+```
+# Enter the WS
+cd /home/limziquan/Desktop/FYP/autoware
+
+# Build it
+colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
+
+# Source it
+source install/setup.bash
+```
+---
+
 
 
 **🚘 Run Autoware (inside container) **
