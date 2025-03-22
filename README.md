@@ -24,6 +24,16 @@ https://github.com/TUMFTM/Carla-Autoware-Bridge.git
 
 
 
+**🗺️ Project workspce in Container**
+
+Path to the workspoace:
+```
+cd /home/limziquan/Desktop/FYP_in_container
+```
+---
+
+
+
 ## 📥 How to Pull the Image
 
 You can pull the Docker image directly from the GitHub Container Registry using the command below:
@@ -60,15 +70,6 @@ The map can be show in the workspace, select the Town10 map for the demo.
 
 ---
 
-
-
-**🗺️ Project workspce in Container**
-
-Path to the workspoace:
-```
-cd /home/limziquan/Desktop/FYP
-```
----
 
 
 **📚 About This Image**
